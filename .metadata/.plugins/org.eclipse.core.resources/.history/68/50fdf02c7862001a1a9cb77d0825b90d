@@ -1,0 +1,9 @@
+package spring.DI;
+
+public class CollectionEx {
+	
+	List<Baz> list; //baz name a,b,c
+	Map<String, String> map; //2
+	properties pro; //2
+
+}

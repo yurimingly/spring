@@ -1,0 +1,9 @@
+package spring.DI;
+
+public class DIMain {
+	
+	public static void main(String arg[]) {
+		ApplicationContext container = new GenericXmllicationContext("DITest.xml")
+	}
+
+}

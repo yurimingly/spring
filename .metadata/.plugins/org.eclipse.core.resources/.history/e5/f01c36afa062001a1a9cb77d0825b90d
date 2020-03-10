@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+<context:annotation-config/>
+<context:component-scan base-package="spring.annotation"/>
+<!-- 스프링패키지와 그 하위 패키지에 대해서도 검사하겠다 -->
+<context:component-scan base-package="spring.*"/>
+
+<!-- <bean id="bar" class="spring.annotation.Bar" p:name="spring"/>
+<bean id="bar1" class="spring.annotation.Bar"> p:name="summer"
+	<qualifier>second</qualifier>
+</bean>
+<bean id="foo" class="spring.annotation.Foo" p:name="spring"/>
+ -->
+
+
+</beans>

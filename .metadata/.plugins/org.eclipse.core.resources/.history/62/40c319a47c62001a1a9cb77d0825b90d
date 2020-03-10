@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="baz1" class="spring.DI.Baz" p:name="a"/>
+<bean id="baz2" class="spring.DI.Baz" p:name="b"/>
+<bean id="baz3" class="spring.DI.Baz" p:name="c"/>
+
+
+<bean id="coll" class="spring.DI.CollectionEx">
+
+<property name="list">
+<list>
+<ref bean="baz1"/>
+<ref bean="baz2"/>
+<ref bean="baz3"/>
+</list>
+</property>
+
+<property name="map">
+<map>
+<entry>
+<key><value>1</value></key> <!-- 문자열혹은 기본형타입의 value라는 것 -->
+<value>a</value>
+</entry>
+
+<entry>
+<key><value>2</value></key>
+</entry> <!-- 문자열혹은 기본형타입의 value라는 것 -->
+<entry><value>2</value></entry>
+</map>
+</property>
+
+<property name="pro">
+<props>
+<prop key="ip">192.168.0.90</prop>
+<prop key="path">path</prop>
+</props>
+</property>
+
+</bean>
+</beans>

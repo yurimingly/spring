@@ -1,0 +1,7 @@
+package spring.DI;
+
+public class LookupDI {
+	public static void main(String arg[]) {
+		dao dao = new dao
+	}
+}

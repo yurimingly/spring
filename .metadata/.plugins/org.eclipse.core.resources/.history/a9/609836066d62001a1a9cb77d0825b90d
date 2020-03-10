@@ -1,0 +1,9 @@
+package spring.DI;
+
+public class Baz {
+	
+	public void doBaz() {
+		System.out.println("Baz 객체는 lookup메서드로 주입!!!!!!!!!!!!!!!!!!!!!!!!!!");
+	}
+
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="bar" class="spring.DI.Bar"/>
+<bean id="baz" class="spring.DI.Baz" p:name="string"></bean>
+
+<bean id="foo3" class="spring.DI.Foo"
+p:bar-ref="bar" p:baz-ref="baz" p:str="hi" p:i="1000"/>
+
+<bean id="lookupEx" class="spring.DI.LookupEx">
+<lookup-method name="getBaz" bean="baz"></lookup-method>
+</bean>
+
+<!-- <bean id="foo2" class="spring.DI.Foo">
+<property name="str"><value>안녕</value></property>
+<property name="i" value="100"/>
+<property name="bar" ref="bar"/>
+<property name="baz" ref="baz"/>
+</bean> -->
+
+<!-- 
+<bean id="foo1" class="spring.DI.Foo">
+	<constructor-arg>
+		<ref bean="bar"/>--> <!-- 기본이 bar인 형을 참조하겟다 -->
+<!--  	</constructor-arg>
+	<constructor-arg ref ="baz"/>	
+</bean>
+-->
+
+
+
+
+
+
+
+</beans>

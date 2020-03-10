@@ -1,0 +1,10 @@
+package spring.chap01;
+
+public class CalculatorServicelmpl {
+	private List valueList;
+
+	public void setValueList(List valueList) {
+		this.valueList = valueList;
+	}
+	
+}

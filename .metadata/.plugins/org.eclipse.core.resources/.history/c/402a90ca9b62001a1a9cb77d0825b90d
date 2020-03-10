@@ -1,0 +1,19 @@
+package spring.annotation;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
+public class Foo {
+
+	Bar bar;
+	
+	
+}
+
+public void doFoo{
+	bar.doBar();
+}
+@PostConstruct
+public void start{syso"foo초기화"}
+@PreDestroy
+public void stop
