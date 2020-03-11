@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
-<aop-project name="springAnnotation"/>
-<aop-project name="springMar"/>
+<aop-project name="springMar">
+<aspect-definition advice-class-name="spring.chap01.LoggingAspect" advice-method-name="logging(org.aspectj.lang.ProceedingJoinPoint)" advice-type="AROUND" aspect-end-line-number="15" aspect-name="logging" aspect-start-line-number="15" factory-id="org.springframework.ide.eclipse.aop.core.annotationAspectDefinitionElementFactory" file="/springMar/src/main/resources/commonConcern.xml" pointcut-expression="execution(* *..*Service.*(..))" proxy-target-class="true">
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:springMar|3:src/main/resources/commonConcern.xml|7:beans:8|8:writeArticleService:8" bean-file="/springMar/src/main/resources/commonConcern.xml" bean-start-line="8" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/springMar/src/main/resources/commonConcern.xml" source="=springMar/src\/main\/java=/gradle_scope=/main=/=/gradle_used_by_scope=/main,test=/&lt;spring.chap01{LoggingAspect.java[LoggingAspect~logging~QProceedingJoinPoint;" source-start-line="18" target="=springMar/src\/main\/java=/gradle_scope=/main=/=/gradle_used_by_scope=/main,test=/&lt;spring.chap01{WriteArticleServiceImpl.java[WriteArticleServiceImpl~write~QArticle;" target-start-line="21"/>
+</aspect-definition>
+</aop-project>
 </aop-reference-model>

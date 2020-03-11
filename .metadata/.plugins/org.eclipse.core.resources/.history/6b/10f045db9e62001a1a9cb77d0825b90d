@@ -1,7 +1,0 @@
-package spring.annotation;
-
-public class Bar {
-	public void doBar() {
-		System.out.println("doBar() 실행");
-	}
-}

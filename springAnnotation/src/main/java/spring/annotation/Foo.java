@@ -18,6 +18,7 @@ public class Foo {
 	 * 
 	 * @Qualifier("second")
 	 */
+	
 @Resource
 public void setBar(Bar bar) {
 	System.out.println("setBar이 실행되었습니다.");
