@@ -12,6 +12,8 @@
 		<config>src/main/resources/DITest.xml</config>
 		<config>src/main/java/spring/DI/Collection.xml</config>
 		<config>src/main/resources/annoTest.xml</config>
+		<config>src/main/resources/mybatisTest.xml</config>
+		<config>src/main/resources/config.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
